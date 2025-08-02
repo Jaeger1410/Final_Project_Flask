@@ -1,7 +1,7 @@
 ''' This module runs the server using Flask,
     with error handling for blank inputs.
 '''
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template # type: ignore
 from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask("Emotion Detector")
